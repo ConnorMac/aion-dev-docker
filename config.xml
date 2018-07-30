@@ -1,0 +1,40 @@
+<aion>
+    <mode>aion</mode>
+    <nodes>
+    </nodes>
+    <consensus>
+    <mining>true</mining>
+    </consensus>
+    <api>
+        <rpc active="true" ip="0.0.0.0" port="8545">
+            <!--boolean, enable/disable cross origin requests (browser enforced)-->
+            <cors-enabled>false</cors-enabled>
+            <!--comma-separated list, APIs available: web3,net,debug,personal,eth,stratum-->
+            <apis-enabled>web3,eth,personal,stratum</apis-enabled>
+            <!--size of thread pool allocated for rpc requests-->
+            <threads>1</threads>
+        </rpc>
+        <java active="true" ip="0.0.0.0" port="8547"></java>
+        <nrg-recommendation>
+            <!--default NRG price used by api if oracle disabled, minimum price recommended by oracle-->
+            <default>10E9</default>
+            <!--max NRG price recommended by oracle-->
+            <max>100E9</max>
+            <!--enable/diable nrg-oracle service. if disabled, api returns default NRG price if asked for nrgPrice-->
+            <oracle-enabled>false</oracle-enabled>
+        </nrg-recommendation>
+    </api>
+    <log>
+        <!--Enable/Disable logback service; if disabled, output will not be logged -->
+        <log-file>true</log-file>
+        <!--Sets the physical location on disk where log files will be stored.-->
+        <log-path>log</log-path>
+        <GEN>INFO</GEN>
+        <VM>ERROR</VM>
+        <SYNC>INFO</SYNC>
+        <CONS>INFO</CONS>
+        <DB>ERROR</DB>
+        <API>INFO</API>
+        <P2P>INFO</P2P>
+    </log>
+</aion>
