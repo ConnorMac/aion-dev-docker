@@ -13,6 +13,6 @@ WORKDIR aion
 # Testing
 COPY config.xml config/config.xml
 RUN rm config/genesis.json
-RUN mv config/testnet.json config/genesis.json
+COPY genesis.json config/genesis.json
 EXPOSE 8545 8547
 CMD ["/bin/sh", "-c", "./aion.sh"]
