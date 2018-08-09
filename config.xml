@@ -29,12 +29,12 @@
         <log-file>true</log-file>
         <!--Sets the physical location on disk where log files will be stored.-->
         <log-path>log</log-path>
-        <GEN>INFO</GEN>
-        <VM>ERROR</VM>
-        <SYNC>INFO</SYNC>
-        <CONS>INFO</CONS>
-        <DB>ERROR</DB>
-        <API>INFO</API>
-        <P2P>INFO</P2P>
+        <GEN>DEBUG</GEN>
+        <VM>DEBUG</VM>
+        <SYNC>DEBUG</SYNC>
+        <CONS>DEBUG</CONS>
+        <DB>DEBUG</DB>
+        <API>DEBUG</API>
+        <P2P>DEBUG</P2P>
     </log>
 </aion>
